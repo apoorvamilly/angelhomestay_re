@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .heading {
+    font-family: "Rouge Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(217, 186, 117);
+  }
+  
+  .section-1{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(assets/image3.jpeg);
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+  }
+
+
+  header{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+  }
+
+  header img{
+    width:auto;
+    height:100%;
+  }
+
+  .hl{
+    border-top: 3px solid rgb(217, 186, 117);
+    width: auto;
+  }
+
+  .section-1-img{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 75%;
+    height: auto;
+    transform: translate(-50%,-50%);
+  }
+
+  .section-1-img img{
+    width:100%;
+    border: solid white 2px;
+  }
+
+  .section-1-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+  }
+
+  .section-1-text h1{
+    color: white;
+    font-family: "Poppins",serif;
+    font-weight: 500;
+    font-style: normal;
+    text-wrap: wrap;
+  }
+
+  .section-1-text h2{
+    color: rgb(217, 186, 117);
+    font-family: "Poppins",serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /*section-2*/
+
+  .section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 2% ;
+    justify-content: center;
+  }
+
+  .heading-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .main-head-1{
+    color: rgb(162,170,177);
+    font-size: 80px;
+    font-family: "Tangerine", serif;
+    font-weight:400;
+    font-style: normal;
+  }
+
+  .heading-1 div:nth-child(2){
+    position: absolute;
+    top: 75%;
+    transform: translatey(-50%);
+    padding-left: 5px;
+  }
+  .main-head-2{
+    color: rgb(85,85,85);
+    font-style: normal;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    
+  }
+
+  .section-2 p{
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    text-align: center;
+  }
