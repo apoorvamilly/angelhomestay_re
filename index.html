@@ -11,15 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&family=Tangerine:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Ruthie&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rouge+Script&family=Tangerine:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/dbe115a975.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--section-1-->
     <div class="section-1">
       <header>
-        <img src="assets/wings.png" />
+        <div class="header-img">
+          <img src="assets/wings (2).png" />
+        </div>
         <h1 class="heading">Angel Homestay</h1>
       </header>
       <div class="hl"></div>
@@ -27,8 +33,50 @@
         <h1>Genuine Hospitality &</h1>
         <h2>Exquisite Kerala Experience</h2>
       </div>
-      <div class="section-1-img">
-        <img src="assets/image5.jpeg" />
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
+
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide1">
+                <div class="slide-content">
+                  <img src="assets/g5.jpg" />
+                </div>
+              </div>
+              <div class="slide slide2">
+                <div class="slide-content">
+                  <img src="assets/image-8.jpeg" />
+                </div>
+              </div>
+              <div class="slide slide3">
+                <div class="slide-content">
+                  <img src="assets/image-9.jpeg" />
+                </div>
+              </div>
+              <div class="slide slide4">
+                <div class="slide-content">
+                  <img src="assets/image-10.jpeg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="controls-left">
+          <label for="slide1"><img src="assets/left-arrow.png" /></label>
+          <label for="slide2"><img src="assets/left-arrow.png" /></label>
+          <label for="slide3"><img src="assets/left-arrow.png" /></label>
+          <label for="slide4"><img src="assets/left-arrow.png" /></label>
+        </div>
+        <div id="controls-right">
+          <label for="slide1"><img src="assets/right-arrow.png" /></label>
+          <label for="slide2"><img src="assets/right-arrow.png" /></label>
+          <label for="slide3"><img src="assets/right-arrow.png" /></label>
+          <label for="slide4"><img src="assets/right-arrow.png" /></label>
+        </div>
       </div>
     </div>
 
@@ -48,6 +96,220 @@
           Luxurious linens, impeccable concierge services, and stunning design
           await you. Contact us and reserve your stay today.
         </p>
+      </div>
+    </div>
+
+    <!--section-3-->
+    <div class="section-3">
+      <div class="section-3-1">
+        <div class="section-3-content">
+          <h2>Home Away from Home</h2>
+          <p>
+            Our family room feels like an extension of your own living
+            space.Capture special moments—the laughter, the stories, and the
+            shared experiences. Create lasting memories with your loved ones.
+          </p>
+        </div>
+        <div class="section-3-img">
+          <img src="assets/image1.jpg" />
+        </div>
+      </div>
+      <div class="section-3-2">
+        <div class="section-3-img">
+          <img src="assets/image2.jpg" />
+        </div>
+        <div class="section-3-content">
+          <h2>Well Equipped Kitchen</h2>
+          <p>
+            Indulge in mouthwatering Kerala delicacies lovingly prepared by our
+            talented local chefs. Savour the flavors of fresh seafood, aromatic
+            spices all served in the traditional Kerala style. Come, stir a pot,
+            share a recipe, and let the flavors weave their spell.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--section-4-->
+    <div class="section-4">
+      <div class="section-4-heading">
+        <div class="heading-1">
+          <div><h1 class="main-head-1">Luxury At</h1></div>
+          <div><h2 class="main-head-2">Angel Homestay</h2></div>
+        </div>
+      </div>
+      <div class="section-4-content">
+        <div class="sec-4-con-1">
+          <img src="assets/image6.jpeg" />
+          <div class="sec-4-text">
+            <h2>Your home in every Destination</h2>
+          </div>
+        </div>
+        <div class="sec-4-con-1">
+          <img src="assets/g2.jpg" />
+          <div class="sec-4-text">
+            <h2>Heartfelt memories</h2>
+          </div>
+        </div>
+        <div class="sec-4-con-1">
+          <img src="assets/image7.jpeg" />
+          <div class="sec-4-text">
+            <h2>Unwind in comfort</h2>
+          </div>
+        </div>
+        <div class="sec-4-con-1">
+          <img src="assets/grid1.jpg" />
+          <div class="sec-4-text">
+            <h2>Discover with Ease</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section-5-->
+    <div class="section-5">
+      <div class="heading-1">
+        <div><h1 class="main-head-1">Amenities at</h1></div>
+        <div>
+          <h2 class="main-head-2" style="color: white">Angel Homestay</h2>
+        </div>
+      </div>
+      <div class="amenities">
+        <div class="box1 box">
+          <h3>Rooms</h3>
+          <p>
+            3 AC rooms+ 1 non AC room<br />
+            Private washrooms<br />
+            Kitchen<br />
+            Dining area<br />
+            Lounge Area Courtyard
+          </p>
+        </div>
+        <div class="box2 box">
+          <h3>Facilities</h3>
+          <p>
+            Free Wifi <br />
+            TV and streaming services<br />
+            Free Private Parking space <br />
+            Refrigerator<br />
+            Washing machine etc
+          </p>
+        </div>
+
+        <div class="box3">
+          <p>
+            *The rooms are subject to availability.<br />
+            Contact the owner for further details
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--section-6-->
+    <div class="section-6">
+      <div class="heading-1">
+        <div><h1 class="main-head-1">Gallery</h1></div>
+        <div><h2 class="main-head-2">Angel Homestay</h2></div>
+      </div>
+      <div class="gallery">
+        <div class="image-box">
+          <div class="image-1 gallery-images">
+            <img src="assets/gal1.jpeg" alt="gal1" />
+          </div>
+          <div class="image-2 gallery-images">
+            <img src="assets/gal2.jpeg" alt="gal2" />
+          </div>
+          <div class="image-3 gallery-images">
+            <img src="assets/gal3.jpeg" alt="gal3" />
+          </div>
+          <div class="image-4 gallery-images">
+            <img src="assets/gal4.jpeg" alt="gal4" />
+          </div>
+          <div class="image-5 gallery-images">
+            <img src="assets/gal5.jpeg" alt="gal5" />
+          </div>
+          <div class="image-6 gallery-images">
+            <img src="assets/image-9.jpeg" alt="gal6" />
+          </div>
+          <div class="image-7">
+            <img src="assets/g4.jpg" alt="gal7" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section-7-->
+    <div class="section-7">
+      <div class="heading-1">
+        <div><h1 class="main-head-1">Contact us</h1></div>
+        <div><h2 class="main-head-2">Angel Homestay</h2></div>
+      </div>
+      <div class="meet-host">
+        <div class="host-img">
+          <img src="assets/host.jpeg" />
+        </div>
+        <div class="host-desc">
+          <p>
+            A veteran of Indian Navy, seafarer and an experienced traveller who
+            has unparalleled understanding of different cultures, customs, and
+            traditions. Come stay, and be part of a space infused with passion,
+            experience, and heartfelt dedication.
+          </p>
+          <p>-John</p>
+        </div>
+      </div>
+      <div class="enquire">
+        <input type="text" placeholder="Name *" />
+        <input type="email" placeholder="Email *" />
+        <button>Contact us</button>
+      </div>
+    </div>
+
+    <!--section-8-->
+    <div class="section-8">
+      <div class="section-8-heading">
+        <div class="sec-8-img">
+          <img src="assets/wings (2).png" />
+        </div>
+        <h1 class="heading">Angel Homestay</h1>
+        <p>
+          Kalarcode, Punnapra, Paravur,<br />
+          Alappuzha, Kerala 688004
+        </p>
+      </div>
+      <div class="container-8">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125915.52240929921!2d76.23902293889435!3d9.520884183870564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b089b0075ec389b%3A0xb36c81f0eb16e2b4!2sAngel%20Homestay!5e0!3m2!1sen!2sin!4v1730884892135!5m2!1sen!2sin"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--section-9-->
+    <div class="section-9">
+      <div class="details">
+        <div class="sect-9-det">
+          <i class="fa-solid fa-location-dot" style="color: #c4a050"></i>
+          <p>
+            Address : Kalarcode, Punnapra,<br />
+            Paravur, Alappuzha, Kerala 688004
+          </p>
+        </div>
+        <div class="sect-9-det">
+          <i class="fa-solid fa-phone" style="color: #c4a050"></i>
+          <p>Phone : +91 8606606451</p>
+        </div>
+        <div class="sect-9-det">
+          <i class="fa-solid fa-envelope" style="color: #c4a050"></i>
+          <p>Email : angelhomestayalpy4@gmail.com</p>
+        </div>
       </div>
     </div>
   </body>
