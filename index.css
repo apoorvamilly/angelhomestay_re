@@ -808,6 +808,10 @@
   column-gap: 4%;
  }
 
+ .gallery-images img{
+  object-fit: cover;
+ }
+
  .image-7{
   display: none;
  }
@@ -861,9 +865,7 @@
 .sect-9-det i{
   font-size: 20px;
 }
-.sect-9-det p{
-  font-size: 18px;
-}
+
 
 
 }
