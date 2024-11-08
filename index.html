@@ -44,12 +44,12 @@
             <div class="inner">
               <div class="slide slide1">
                 <div class="slide-content">
-                  <img src="assets/g5.jpg" />
+                  <img src="assets/image-8.jpeg " />
                 </div>
               </div>
               <div class="slide slide2">
                 <div class="slide-content">
-                  <img src="assets/image-8.jpeg" />
+                  <img src="assets/g5.jpg" />
                 </div>
               </div>
               <div class="slide slide3">
@@ -102,7 +102,7 @@
     <!--section-3-->
     <div class="section-3">
       <div class="section-3-1">
-        <div class="section-3-content">
+        <div class="section-3-content sec-3">
           <h2>Home Away from Home</h2>
           <p>
             Our family room feels like an extension of your own living
@@ -110,15 +110,15 @@
             shared experiences. Create lasting memories with your loved ones.
           </p>
         </div>
-        <div class="section-3-img">
+        <div class="section-3-img sec-3">
           <img src="assets/image1.jpg" />
         </div>
       </div>
       <div class="section-3-2">
-        <div class="section-3-img">
+        <div class="section-3-img sec-3">
           <img src="assets/image2.jpg" />
         </div>
-        <div class="section-3-content">
+        <div class="section-3-content sec-3">
           <h2>Well Equipped Kitchen</h2>
           <p>
             Indulge in mouthwatering Kerala delicacies lovingly prepared by our
@@ -267,9 +267,9 @@
         </div>
       </div>
       <div class="enquire">
-        <input type="text" placeholder="Name *" />
-        <input type="email" placeholder="Email *" />
-        <button>Contact us</button>
+        <input type="text" id="name" placeholder="Name *" />
+        <input type="email" id="email" placeholder="Email *" />
+        <button onclick="submitForm()">Contact us</button>
       </div>
     </div>
 
@@ -321,5 +321,29 @@
         </div>
       </div>
     </div>
+
+    <!--form-code-->
+    <script>
+      function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+
+        var googleFormURL =
+          "https://docs.google.com/forms/d/e/1FAIpQLSdQN7vgOjom4d_KnNw1zShLOSnuyMyXJwBbT3Yb2CE7CimA4Q/formResponse";
+        var entryNameID = "entry.1280063139";
+        var entryEmailID = "entry.1196940652";
+
+        var formData = new FormData();
+        formData.append(entryNameID, name);
+        formData.append(entryEmailID, email);
+
+        fetch(googleFormURL, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .catch(() => {});
+      }
+    </script>
   </body>
 </html>
